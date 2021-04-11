@@ -41,7 +41,4 @@ frontend/node_modules
 fronted/.prttierrc.js
 fronted/.eslintrc.js
 
-docker/db/mysql/data/
-actions-runner
-nginx-infra-subway
-src/main/resources/config/
+docker/db/mysql/data
