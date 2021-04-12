@@ -1,5 +1,6 @@
 package nextstep.subway.line.ui;
 
+import lombok.extern.slf4j.Slf4j;
 import nextstep.subway.line.application.LineService;
 import nextstep.subway.line.dto.LineRequest;
 import nextstep.subway.line.dto.LineResponse;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/lines")
 public class LineController {

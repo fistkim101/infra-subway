@@ -45,3 +45,4 @@ docker/db/mysql/data/
 actions-runner
 nginx-infra-subway
 src/main/resources/config/
+log/

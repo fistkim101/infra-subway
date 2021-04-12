@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <springProperty scope="context" name="LOG_LEVEL" source="logging.level.root"/>
 
     <appender name="CONSOLE_LOGGER" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%fullRequest%n%n%fullResponse</pattern>
+            <pattern>%-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n
+            </pattern>
         </encoder>
     </appender>
 
@@ -12,7 +14,7 @@
         <file>log/infra-subway.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>
-                %fullRequest%n%n%fullResponse
+                %-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n
             </Pattern>
             <charset>UTF-8</charset>
         </encoder>
@@ -40,7 +42,7 @@
         <file>log/error/infra-subway-error.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>
-                %fullRequest%n%n%fullResponse
+                %-5level %d{yy-MM-dd HH:mm:ss}[%thread] [%logger{0}:%line] - %msg%n
             </Pattern>
             <charset>UTF-8</charset>
         </encoder>
@@ -58,6 +60,11 @@
             </springProfile>
         </rollingPolicy>
     </appender>
+
+    <root level="${LOG_LEVEL}">
+        <appender-ref ref="CONSOLE_LOGGER"/>
+        <appender-ref ref="FULL_LOGGER"/>
+    </root>
 
     <root>
         <appender-ref ref="CONSOLE_LOGGER"/>
