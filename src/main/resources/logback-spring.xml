@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <springProfile name="local">
+        <appender name="LOCAL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>/log/infra-subway.log</file>
+            <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+                <Pattern>
+                    %d{yyyy-MM-dd HH:mm:ss} %logger{36} - %msg%n
+                </Pattern>
+                <charset>UTF-8</charset>
+            </encoder>
+        </appender>
+
+        <root>
+            <appender-ref ref="LOCAL"/>
+        </root>
+
+    </springProfile>
+</configuration>
