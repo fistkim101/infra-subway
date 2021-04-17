@@ -3,14 +3,15 @@ import {check, sleep} from 'k6';
 
 export let options = {
     vus: 1,
-    duration: '10s',
+    duration: '3s',
 
     thresholds: {
         http_req_duration: ['p(99)<1500'],
     },
 };
 
-const BASE_URL = 'https://fistkim.kro.kr';
+//const BASE_URL = 'https://fistkim.kro.kr';
+const BASE_URL = 'http://localhost:8080';
 
 export default () => {
 
