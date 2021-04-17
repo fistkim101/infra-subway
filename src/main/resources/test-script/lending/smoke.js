@@ -20,5 +20,4 @@ export default () => {
     check(lendingPageResponse, {
         'lending page running': (response) => response.status === 200
     });
-    sleep(1);
 };

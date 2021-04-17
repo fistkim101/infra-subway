@@ -66,5 +66,4 @@ export default () => {
     check(createLinesResponse, {
         'created Line successfully': (response) => response.status === 201,
     });
-    sleep(1);
 };

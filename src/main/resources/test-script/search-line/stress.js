@@ -33,6 +33,4 @@ export default () => {
     check(searchLineResponse, {
         'line searching success': (response) => response.status === 200
     });
-
-    sleep(1);
 };

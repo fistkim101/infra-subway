@@ -50,5 +50,4 @@ export default () => {
     check(createLinesResponse, {
         'account created successfully': (response) => response.status === 201,
     });
-    sleep(1);
 };
