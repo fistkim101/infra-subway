@@ -11,25 +11,14 @@ export let options = {
 };
 
 const BASE_URL = 'https://fistkim.kro.kr';
-const USERNAME = 'fistkim101@gmail.com';
-const PASSWORD = '12qw';
 
 export default () => {
 
-    // login
-    let loginUrl = `${BASE_URL}/login/token`;
-    let loginPayload = JSON.stringify({
-        email: USERNAME,
-        password: PASSWORD,
-    });
-    let loginParams = {
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    };
-    let loginResponse = http.post(loginUrl, loginPayload, loginParams);
-    check(loginResponse, {
-        'logged in successfully': (response) => response.json('accessToken') !== '',
+    // lending page
+    let homeUrl = `${BASE_URL}`;
+    let lendingPageResponse = http.get(homeUrl);
+    check(lendingPageResponse, {
+        'lending page running': (response) => response.status === 200
     });
 
     // register account
