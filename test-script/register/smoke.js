@@ -31,7 +31,6 @@ export default () => {
     });
     let registerAccountParams = {
         headers: {
-            'Authorization': `Bearer ${loginResponse.json('accessToken')}`,
             'Content-Type': 'application/json',
         },
     };
