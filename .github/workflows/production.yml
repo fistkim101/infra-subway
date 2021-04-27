@@ -26,8 +26,8 @@ jobs:
       - name: grant execute permission for gradlew
         run: chmod +x gradlew
 
-#      - name: test with Gradle
-#        run: ./gradlew test
+      - name: test with Gradle
+        run: ./gradlew test
 
   docker_image_build_and_push:
     runs-on: ubuntu-latest
