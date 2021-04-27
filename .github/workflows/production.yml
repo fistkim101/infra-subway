@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: recursive
 
       - name: set up JDK 11
         uses: actions/setup-java@v2
@@ -37,6 +38,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: recursive
 
       - name: set up JDK 11
         uses: actions/setup-java@v2
