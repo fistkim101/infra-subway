@@ -4,6 +4,7 @@
 target/
 /log/
 .gradle/
+.idea/
 
 # OS Files #
 .DS_Store
