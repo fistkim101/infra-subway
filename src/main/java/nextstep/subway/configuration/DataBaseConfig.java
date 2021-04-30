@@ -2,6 +2,7 @@ package nextstep.subway.configuration;
 
 import com.zaxxer.hikari.HikariDataSource;
 import nextstep.subway.common.Constants;
+import nextstep.subway.configuration.ReplicationRoutingDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -21,7 +22,7 @@ import java.util.HashMap;
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {"nextstep.subway"})
-class DataBaseConfig {
+public class DataBaseConfig {
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.hikari.master")
