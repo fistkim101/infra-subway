@@ -1,5 +1,5 @@
-nextstep/subway/favorite/ui/FavoriteController.java
- nextstep.subway.favorite.ui.FavoriteController
+nextstep/subway/configuration/ReplicationRoutingDataSource.java
+ nextstep.subway.configuration.ReplicationRoutingDataSource
 nextstep/subway/member/dto/MemberRequest.java
  nextstep.subway.member.dto.MemberRequest
 nextstep/subway/configuration/AppConfig.java
@@ -52,8 +52,8 @@ nextstep/subway/line/ui/LineController.java
  nextstep.subway.line.ui.LineController
 nextstep/subway/auth/ui/AuthenticationPrincipalArgumentResolver.java
  nextstep.subway.auth.ui.AuthenticationPrincipalArgumentResolver
-nextstep/subway/favorite/domain/FavoriteRepository.java
- nextstep.subway.favorite.domain.FavoriteRepository
+nextstep/subway/map/ui/MapController.java
+ nextstep.subway.map.ui.MapController
 nextstep/subway/member/dto/MemberResponse.java
  nextstep.subway.member.dto.MemberResponse
 nextstep/subway/favorite/domain/Favorite.java
@@ -96,15 +96,15 @@ nextstep/subway/map/application/PathService.java
  nextstep.subway.map.application.PathService
 nextstep/subway/auth/infrastructure/JwtTokenProvider.java
  nextstep.subway.auth.infrastructure.JwtTokenProvider
-nextstep/subway/favorite/application/FavoriteService.java
- nextstep.subway.favorite.application.FavoriteService
+nextstep/subway/configuration/DataBaseConfig.java
+ nextstep.subway.configuration.DataBaseConfig
 nextstep/subway/common/Constants.java
  nextstep.subway.common.Constants
 nextstep/subway/map/application/MapService.java
  nextstep.subway.map.application.MapService
-nextstep/subway/map/ui/MapController.java
- nextstep.subway.map.ui.MapController
-nextstep/subway/configuration/DataBaseConfig.java
- nextstep.subway.configuration.DataBaseConfig
-nextstep/subway/configuration/ReplicationRoutingDataSource.java
- nextstep.subway.configuration.ReplicationRoutingDataSource
+nextstep/subway/favorite/domain/FavoriteRepository.java
+ nextstep.subway.favorite.domain.FavoriteRepository
+nextstep/subway/favorite/ui/FavoriteController.java
+ nextstep.subway.favorite.ui.FavoriteController
+nextstep/subway/favorite/application/FavoriteService.java
+ nextstep.subway.favorite.application.FavoriteService
