@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572128e1-60c8-41e7-90b7-517a9560929b" name="Default Changelist" comment="ci: submodule 관련 설정 변경">
+    <list default="true" id="572128e1-60c8-41e7-90b7-517a9560929b" name="Default Changelist" comment="feat: cache 설정 제거">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nextstep/subway/common/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nextstep/subway/map/application/MapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nextstep/subway/map/application/MapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-production.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-production.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,17 +75,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SubwayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="subway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="nextstep.subway.SubwayApplication" />
@@ -96,7 +94,8 @@
       <workItem from="1619500461214" duration="793000" />
       <workItem from="1619501272911" duration="4060000" />
       <workItem from="1619505350275" duration="211000" />
-      <workItem from="1619505579497" duration="2371000" />
+      <workItem from="1619505579497" duration="5408000" />
+      <workItem from="1619752003200" duration="1729000" />
     </task>
     <task id="LOCAL-00001" summary="test: k6 script 변경(경로검색)">
       <created>1619500987374</created>
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619506237469</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: cache 설정 제거">
+      <created>1619508183601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619508183601</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test: k6 script 변경(경로검색)" />
     <MESSAGE value="ci: submodule 관련 설정 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: submodule 관련 설정 변경" />
+    <MESSAGE value="feat: cache 설정 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: cache 설정 제거" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="1440" height="900" key="CommitChangelistDialog2" timestamp="1619505103812">
